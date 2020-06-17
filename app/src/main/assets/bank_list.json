@@ -1,0 +1,762 @@
+[
+  {
+    "id": 99,
+    "bank_name": "Allahabad UP Gramin Bank",
+    "bank_code": "AUU",
+    "iin_code": 607091,
+    "acquired_id": 220001,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 100,
+    "bank_name": "Andhra Bank",
+    "bank_code": "ABU",
+    "iin_code": 607076,
+    "acquired_id": 200020,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 101,
+    "bank_name": "Andhra Pradesh Gramin Vikash Bank",
+    "bank_code": "APU",
+    "iin_code": 607198,
+    "acquired_id": 200028,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 102,
+    "bank_name": "Andhra Pragathi Grameena Bank",
+    "bank_code": "AGU",
+    "iin_code": 607121,
+    "acquired_id": 220025,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 103,
+    "bank_name": "Assam Gramin Vikash Bank",
+    "bank_code": "AVU",
+    "iin_code": 607064,
+    "acquired_id": 220029,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 104,
+    "bank_name": "Axis Bank",
+    "bank_code": "AXU",
+    "iin_code": 607153,
+    "acquired_id": 200004,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 105,
+    "bank_name": "Bangiya Gramin Vikash Bank",
+    "bank_code": "BVU",
+    "iin_code": 607063,
+    "acquired_id": 220030,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 106,
+    "bank_name": "Bank Of Baroda",
+    "bank_code": "BBU",
+    "iin_code": 606985,
+    "acquired_id": 200022,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 107,
+    "bank_name": "Bank of India",
+    "bank_code": "BIU",
+    "iin_code": 508505,
+    "acquired_id": 200001,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 108,
+    "bank_name": "Bank of Maharashtra",
+    "bank_code": "BMU",
+    "iin_code": 607387,
+    "acquired_id": 200011,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 109,
+    "bank_name": "Baroda Gujarat Gramin Bank",
+    "bank_code": "BJU",
+    "iin_code": 606995,
+    "acquired_id": 220002,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 110,
+    "bank_name": "Baroda Rajasthan Kshetriya Gramin Bank",
+    "bank_code": "BRU",
+    "iin_code": 607280,
+    "acquired_id": 220006,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 111,
+    "bank_name": "Baroda Uttar Pradesh Gramin Bank",
+    "bank_code": "BUU",
+    "iin_code": 606993,
+    "acquired_id": 220007,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 112,
+    "bank_name": "Bihar Gramin Bank",
+    "bank_code": "BGU",
+    "iin_code": 607377,
+    "acquired_id": 220005,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 113,
+    "bank_name": "Canara Bank",
+    "bank_code": "CNU",
+    "iin_code": 607396,
+    "acquired_id": 200005,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 114,
+    "bank_name": "Central Bank of India",
+    "bank_code": "CBU",
+    "iin_code": 607264,
+    "acquired_id": 200012,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 115,
+    "bank_name": "Central Madya Pradesh Gramin Bank",
+    "bank_code": "CMU",
+    "iin_code": 607071,
+    "acquired_id": 220027,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 116,
+    "bank_name": "City Union Bank",
+    "bank_code": "CUU",
+    "iin_code": 607324,
+    "acquired_id": 200055,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 117,
+    "bank_name": "Chaitanya Godavari Gramin Bank",
+    "bank_code": "CYU",
+    "iin_code": 607080,
+    "acquired_id": 220003,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 118,
+    "bank_name": "Chhattisgharh Rajya Gramin Bank",
+    "bank_code": "CPU",
+    "iin_code": 607214,
+    "acquired_id": 220037,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 119,
+    "bank_name": "Corporation Bank",
+    "bank_code": "CRU",
+    "iin_code": 607184,
+    "acquired_id": 200019,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 120,
+    "bank_name": "Dena Bank",
+    "bank_code": "DNU",
+    "iin_code": 508547,
+    "acquired_id": 200017,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 121,
+    "bank_name": "Dena Gujarat Gramin Bank",
+    "bank_code": "DGU",
+    "iin_code": 607099,
+    "acquired_id": 220033,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 122,
+    "bank_name": "Equitas Small Finance Bank",
+    "bank_code": "ESU",
+    "iin_code": 508998,
+    "acquired_id": 210032,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 123,
+    "bank_name": "Ellaquai Dehati Bank",
+    "bank_code": "EDU",
+    "iin_code": 607218,
+    "acquired_id": 220049,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 124,
+    "bank_name": "Federal Bank",
+    "bank_code": "FBU",
+    "iin_code": 607363,
+    "acquired_id": 200029,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 125,
+    "bank_name": "Fino Payments Bank",
+    "bank_code": "FNU",
+    "iin_code": 608001,
+    "acquired_id": 200070,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 126,
+    "bank_name": "Gramin bank of Aryavart",
+    "bank_code": "GAU",
+    "iin_code": 607024,
+    "acquired_id": 220004,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 127,
+    "bank_name": "HDFC Bank",
+    "bank_code": "HDU",
+    "iin_code": 607152,
+    "acquired_id": 200018,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 128,
+    "bank_name": "Himachal Pradesh Gramin Bank",
+    "bank_code": "HPU",
+    "iin_code": 607140,
+    "acquired_id": 220016,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 129,
+    "bank_name": "ICICI Bank",
+    "bank_code": "ICU",
+    "iin_code": 508534,
+    "acquired_id": 200003,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 130,
+    "bank_name": "IDBI Bank",
+    "bank_code": "IDU",
+    "iin_code": 607095,
+    "acquired_id": 200024,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 131,
+    "bank_name": "IDFC Bank",
+    "bank_code": "IBU",
+    "iin_code": 608117,
+    "acquired_id": 200051,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 132,
+    "bank_name": "Indian bank",
+    "bank_code": "INU",
+    "iin_code": 607105,
+    "acquired_id": 200014,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 133,
+    "bank_name": "Indian Overseas Bank",
+    "bank_code": "IOU",
+    "iin_code": 607126,
+    "acquired_id": 200038,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 134,
+    "bank_name": "IndusInd Bank",
+    "bank_code": "IIU",
+    "iin_code": 607189,
+    "acquired_id": 200031,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 135,
+    "bank_name": "Jammu & Kashmir Bank",
+    "bank_code": "JKU",
+    "iin_code": 607440,
+    "acquired_id": 200048,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 136,
+    "bank_name": "Jharkhand Gramin Bank",
+    "bank_code": "JGU",
+    "iin_code": 607021,
+    "acquired_id": 210003,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 137,
+    "bank_name": "Karnataka Bank Ltd",
+    "bank_code": "KBU",
+    "iin_code": 607270,
+    "acquired_id": 200044,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 138,
+    "bank_name": "Kashi Gomati Samyut Gramin Bank",
+    "bank_code": "KSU",
+    "iin_code": 607365,
+    "acquired_id": 220026,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 139,
+    "bank_name": "Karnataka Vikas Grameena Bank",
+    "bank_code": "SKU",
+    "iin_code": 607122,
+    "acquired_id": 220024,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 140,
+    "bank_name": "Karur Vysya Bank",
+    "bank_code": "KVU",
+    "iin_code": 508662,
+    "acquired_id": 200046,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 141,
+    "bank_name": "Kaveri Grameena Bank",
+    "bank_code": "KAU",
+    "iin_code": 607308,
+    "acquired_id": 220043,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 142,
+    "bank_name": "Kerala Gramin Bank",
+    "bank_code": "KGU",
+    "iin_code": 607399,
+    "acquired_id": 200033,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 143,
+    "bank_name": "Kotak Mahindra Bank",
+    "bank_code": "KMU",
+    "iin_code": 607420,
+    "acquired_id": 200036,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 144,
+    "bank_name": "Langpi Dehangi Rural Bank",
+    "bank_code": "LRU",
+    "iin_code": 607202,
+    "acquired_id": 220045,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 145,
+    "bank_name": "Madhya Bihar Gramin Bank",
+    "bank_code": "MBU",
+    "iin_code": 607136,
+    "acquired_id": 220017,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 146,
+    "bank_name": "Madhyanchal Gramin Bank",
+    "bank_code": "MAU",
+    "iin_code": 607232,
+    "acquired_id": 220036,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 147,
+    "bank_name": "Maharashtra Gramin Bank",
+    "bank_code": "MGU",
+    "iin_code": 607000,
+    "acquired_id": 200030,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 148,
+    "bank_name": "Malwa Gramin Bank",
+    "bank_code": "MPU",
+    "iin_code": 607241,
+    "acquired_id": 220040,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 149,
+    "bank_name": "Manipur Rural Bank",
+    "bank_code": "MNU",
+    "iin_code": 607062,
+    "acquired_id": 220031,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 150,
+    "bank_name": "Meghalaya Rural Bank",
+    "bank_code": "MXU",
+    "iin_code": 607206,
+    "acquired_id": 220046,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 151,
+    "bank_name": "Narmada Jhabua Gramin Bank",
+    "bank_code": "NMU",
+    "iin_code": 607022,
+    "acquired_id": 210004,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 152,
+    "bank_name": "Odisha Gramya Bank",
+    "bank_code": "ODU",
+    "iin_code": 607060,
+    "acquired_id": 220048,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 153,
+    "bank_name": "Oriental Bank of Commerce",
+    "bank_code": "OBU",
+    "iin_code": 607085,
+    "acquired_id": 200006,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 154,
+    "bank_name": "Pallavan Grama Bank",
+    "bank_code": "PXU",
+    "iin_code": 607052,
+    "acquired_id": 220047,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 155,
+    "bank_name": "Pandyan GB",
+    "bank_code": "PDU",
+    "iin_code": 607059,
+    "acquired_id": 220014,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 156,
+    "bank_name": "Paschim Banga Gramin Bank",
+    "bank_code": "PBU",
+    "iin_code": 607079,
+    "acquired_id": 220008,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 157,
+    "bank_name": "Pragathi Krishna Gramin Bank",
+    "bank_code": "PKU",
+    "iin_code": 607400,
+    "acquired_id": 200034,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 158,
+    "bank_name": "Prathama Bank",
+    "bank_code": "PAU",
+    "iin_code": 607124,
+    "acquired_id": 220023,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 159,
+    "bank_name": "Puduvai Bharthiar Grama Bank",
+    "bank_code": "PEU",
+    "iin_code": 607054,
+    "acquired_id": 200067,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 160,
+    "bank_name": "Punjab & Sind Bank",
+    "bank_code": "PSU",
+    "iin_code": 607087,
+    "acquired_id": 200037,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 161,
+    "bank_name": "Punjab Gramin Bank",
+    "bank_code": "PPU",
+    "iin_code": 607138,
+    "acquired_id": 220018,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 162,
+    "bank_name": "Punjab National Bank",
+    "bank_code": "PNU",
+    "iin_code": 607027,
+    "acquired_id": 200013,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 163,
+    "bank_name": "Purvanchal Gramin Bank",
+    "bank_code": "PUU",
+    "iin_code": 607212,
+    "acquired_id": 220035,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 164,
+    "bank_name": "Rajasthan Marudhara Gramin Bank",
+    "bank_code": "RMU",
+    "iin_code": 607509,
+    "acquired_id": 220041,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 165,
+    "bank_name": "Ratnakar Bank",
+    "bank_code": "RNU",
+    "iin_code": 607393,
+    "acquired_id": 200021,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 166,
+    "bank_name": "Saptagiri Grameena Bank",
+    "bank_code": "SAU",
+    "iin_code": 607053,
+    "acquired_id": 220021,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 167,
+    "bank_name": "Sarva Haryana Gramin Bank",
+    "bank_code": "HGU",
+    "iin_code": 607139,
+    "acquired_id": 220020,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 168,
+    "bank_name": "Sarva UP Gramin Bank",
+    "bank_code": "UPU",
+    "iin_code": 607135,
+    "acquired_id": 220019,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 169,
+    "bank_name": "Saurashtra Gramin Bank",
+    "bank_code": "SWU",
+    "iin_code": 607200,
+    "acquired_id": 220034,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 170,
+    "bank_name": "Shivalik Mercantile Cooperative Bank",
+    "bank_code": "SLU",
+    "iin_code": 607119,
+    "acquired_id": 200061,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 171,
+    "bank_name": "South Indian Bank",
+    "bank_code": "SIU",
+    "iin_code": 607475,
+    "acquired_id": 200049,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 172,
+    "bank_name": "State Bank of India",
+    "bank_code": "SBU",
+    "iin_code": 607094,
+    "acquired_id": 200032,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 173,
+    "bank_name": "Sutlej Gramin Bank",
+    "bank_code": "SGU",
+    "iin_code": 607310,
+    "acquired_id": 220015,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 174,
+    "bank_name": "Syndicate Bank",
+    "bank_code": "SYU",
+    "iin_code": 607580,
+    "acquired_id": 200039,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 175,
+    "bank_name": "Tamilnad Mercantile Bank",
+    "bank_code": "TMU",
+    "iin_code": 607187,
+    "acquired_id": 200060,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 176,
+    "bank_name": "Telangana Grameena Bank",
+    "bank_code": "TEU",
+    "iin_code": 607195,
+    "acquired_id": 220032,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 177,
+    "bank_name": "The Saraswat Co-operative Bank Ltd",
+    "bank_code": "SRU",
+    "iin_code": 652150,
+    "acquired_id": 200040,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 178,
+    "bank_name": "Tripura Gramin Bank",
+    "bank_code": "TGU",
+    "iin_code": 607065,
+    "acquired_id": 210001,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 179,
+    "bank_name": "UCO Bank",
+    "bank_code": "UCU",
+    "iin_code": 607066,
+    "acquired_id": 200016,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 180,
+    "bank_name": "Union Bank of India",
+    "bank_code": "UOU",
+    "iin_code": 607161,
+    "acquired_id": 200002,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 181,
+    "bank_name": "United Bank Of India",
+    "bank_code": "UBU",
+    "iin_code": 607646,
+    "acquired_id": 200023,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 182,
+    "bank_name": "Utkal Gramin Bank",
+    "bank_code": "UGU",
+    "iin_code": 607234,
+    "acquired_id": 220044,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 183,
+    "bank_name": "Uttar Banga Kshetriya Gramin Bank",
+    "bank_code": "UKU",
+    "iin_code": 607073,
+    "acquired_id": 220022,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 184,
+    "bank_name": "Uttar Bihar Grameen Bank",
+    "bank_code": "UZU",
+    "iin_code": 607069,
+    "acquired_id": 220028,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 185,
+    "bank_name": "Uttarakhand Gramin Bank",
+    "bank_code": "UTU",
+    "iin_code": 607197,
+    "acquired_id": 220038,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 186,
+    "bank_name": "Vananchal Gramin Bank",
+    "bank_code": "VAU",
+    "iin_code": 607210,
+    "acquired_id": 220039,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 187,
+    "bank_name": "Vidarbha Konkan Gramin Bank",
+    "bank_code": "WJU",
+    "iin_code": 607020,
+    "acquired_id": 210002,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 188,
+    "bank_name": "Vijaya Bank",
+    "bank_code": "VJU",
+    "iin_code": 607075,
+    "acquired_id": 200015,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 189,
+    "bank_name": "Union Bank of India",
+    "bank_code": "UOU",
+    "iin_code": 508500,
+    "acquired_id": 200002,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 190,
+    "bank_name": "Oriental Bank of Commerce",
+    "bank_code": "OBU",
+    "iin_code": 607041,
+    "acquired_id": 200006,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 191,
+    "bank_name": "IDFC Bank",
+    "bank_code": "IBU",
+    "iin_code": 608116,
+    "acquired_id": 200051,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 192,
+    "bank_name": "IDFC Bank",
+    "bank_code": "IBU",
+    "iin_code": 608118,
+    "acquired_id": 200051,
+    "status": "ACTIVE"
+  },
+  {
+    "id": 193,
+    "bank_name": "Fino Payments Bank",
+    "bank_code": "FNU",
+    "iin_code": 608002,
+    "acquired_id": 200070,
+    "status": "ACTIVE"
+  }
+]

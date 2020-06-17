@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/option3"
+        android:title="NEFT" />
+    <item
+        android:id="@+id/option4"
+        android:title="IMPS" />
+    <item
+        android:id="@+id/option1"
+        android:title="RTGS" />
+    <item
+        android:id="@+id/option2"
+        android:title="UPI" />
+
+
+</menu>

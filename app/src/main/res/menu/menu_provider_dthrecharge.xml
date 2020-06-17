@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="100"
+        android:title="Airtel"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="RelianceDigitalTV"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="SUNTV"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="VideoconD2H"
+        app:showAsAction="never" />
+
+    <item
+        android:orderInCategory="100"
+        android:title="DISHTV"
+        app:showAsAction="never" />
+
+    <item
+        android:orderInCategory="100"
+        android:title="TATASKYB2B"
+        app:showAsAction="never" />
+
+    <item
+        android:orderInCategory="100"
+        android:title="TATASKYB2C"
+        app:showAsAction="never" />
+</menu>

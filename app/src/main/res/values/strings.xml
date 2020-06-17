@@ -1,0 +1,296 @@
+<resources>
+    <string name="app_name">Cashbag</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Login-->
+    <string name="login">Login To Your</string>
+    <string name="account">Account</string>
+    <string name="register_mobile_number">Email/Phone</string>
+    <string name="enter_pswd">Enter Password ( Minimum 6 characters )</string>
+    <string name="enter_pswd_new">Enter Password</string>
+    <string name="login_securely">Login Securely</string>
+    <string name="forgot_pswd">Forgot Password?</string>
+    <string name="new_to_kkm">New to Cash Bag ?</string>
+    <string name="register_now">Register Now</string>
+
+    <string name="valid_to">VALID TO</string>
+
+
+    <!--Registration-->
+    <string name="kkm_registration">"Cash Bag Registration"</string>
+    <string name="referral_code">Referral Invite Code</string>
+    <string name="mob_no">Mobile Number</string>
+    <string name="email_id">Email ID</string>
+    <string name="create_new_acco">Create New Account</string>
+    <string name="donthaveaccount">Already have Cash Bag Account.</string>
+    <string name="login_now">Login Now</string>
+    <string name="optional">(Optional)</string>
+
+    <!--Add Money-->
+    <string name="is_available_balance">is available balance in your Bag</string>
+    <string name="add_money">Add Money</string>
+    <string name="electricity_inst_text">Your service provider will take two working days to consider bill paid in their accounts.</string>
+
+    <!--App Bar-->
+    <string name="medicine">Medicine</string>
+    <string name="money_tgransfer">Money Transfer</string>
+    <string name="theme_park">Theme Park</string>
+    <string name="travel">Travel</string>
+
+    <!--Bottom Navigation-->
+    <string name="title_home">Home</string>
+    <string name="title_payout">Payout</string>
+    <string name="title_wallet">Bag</string>
+
+    <!--Bus-->
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="journey_date">Journey Date</string>
+    <string name="search_bus">Search Bus</string>
+
+    <!--Coupon-->
+    <string name="shopping_offers">Shopping Offers</string>
+    <string name="flat">Flat</string>
+    <string name="min_shop_amt">MIN SHOPPING 500</string>
+
+    <!--DTH Recharge-->
+    <string name="select_operator">Select Operator</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="browse_plans">Browse Plans</string>
+    <string name="make_payment_from_wallet">Make Payment from your Cash Bag</string>
+    <string name="make_payment">Make  Payment</string>
+    <string name="recent_st">Recent</string>
+
+    <!--Electricity-->
+    <string name="select_board">Select Board</string>
+    <string name="service_number">Service Number/Account Number</string>
+
+    <!--Error Dialog-->
+    <string name="ok">OK</string>
+
+    <!--Metro recharge-->
+
+    <!--Mobile Recharge-->
+    <string name="prepaid">Prepaid</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="data_card">Datacard</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="datacard_number">Datacard Number</string>
+
+
+    <!--travel-->
+    <string name="book_tickect">Book Ticket</string>
+    <string name="check_pnr">Check PNR</string>
+    <string name="travel_check">All Non-AC and AC Coaches</string>
+    <string name="search_train">Search Train</string>
+    <string name="enter_pnr">Enter PNR Number</string>
+    <string name="check_pnr_status">Check PNR Status</string>
+    <string name="flights">Flights</string>
+    <string name="hotel">Hotel</string>
+
+    <!--side menu-->
+    <string name="my_profile_text">Edit Profile</string>
+    <string name="support_text">Support</string>
+    <string name="setting_text">Setting</string>
+
+    <!--select language-->
+    <string name="choose_language">Choose Your Language</string>
+    <string name="english">ENGLISH</string>
+    <string name="hindi">हिन्दी</string>
+
+    <!--permission-->
+    <string name="ask_permission">We at Cash Bag take privacy and security with utmost seriousness. We only ask for App permission to enhance either user experience or for specific functionality.</string>
+    <string name="allow_or_deny_permission">You still have the right to allow or deny any permissions !</string>
+    <string name="i_understand_btn">I Understand</string>
+
+    <!--news-->
+    <string name="popular">Popular</string>
+
+    <!--money transfer second-->
+    <string name="transfer_money_by_upi">Transfer Money By UPI</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="send_money">Send Money</string>
+    <string name="add_beneficiary">Add Beneficiary</string>
+    <string name="beneficiary_list">Beneficiary List</string>
+
+
+    <!--money transfer -->
+    <string name="enter_upi_id_bank_account_number">Enter UPI ID / Bank Account Number</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="proceed">Proceed</string>
+    <string name="select_saved_account">Select Saved Account</string>
+    <string name="view_all">View All</string>
+    <string name="selsect_a_contact">Select A Contact</string>
+    <string name="search">Search</string>
+
+    <!--Dashboard data-->
+    <string name="mobile_postpaid">Mobile Postpaid</string>
+    <string name="mob_prepaid">Mobile Prepaid</string>
+    <string name="dth_recharge">DTH Recharge</string>
+    <string name="train">Train</string>
+    <string name="bus">Bus</string>
+
+    <!--showError String-->
+    <string name="loginid_err">Please Enter Your Valid Login ID</string>
+    <string name="enter_pswd_err">Please Enter Your Password</string>
+    <string name="referral_mob_no_err">Please Enter Valid Referral Mobile Number</string>
+    <string name="valid_mob_no_err">Please Enter Your Valid Mobile Number</string>
+    <string name="datacard_err">Please Enter Your Datacard Number</string>
+    <string name="email_id_err">Please Enter Valid Email ID</string>
+    <string name="select_operator_err">Please Select Operator</string>
+    <string name="customer_id_err">Please Enter Your Customer ID</string>
+    <string name="enter_amt_err">Please Enter Amount</string>
+    <string name="select_board_err">Please Select Board</string>
+    <string name="service_number_err">Please Enter Service Number</string>
+    <string name="upi_id_err">Please Enter UPI ID/Bank Account Number</string>
+    <string name="ifsc_code_err">Please Enter IFSC Code</string>
+    <string name="account_holder_name_err">Please Enter Account Holder\'s Name</string>
+    <string name="amount_should_less_than_err">Amount should be less than 99999</string>
+    <string name="source_location_err">Please Enter Your source Location</string>
+    <string name="destination_err">Please Enter Your Destination</string>
+    <string name="select_journey_date_err">Please select your Journey Date</string>
+    <string name="pnr_number_err">Please Enter PNR Number</string>
+    <string name="same_location_error">Same origin and destination</string>
+
+    <!--Toast-->
+    <string name="payment_done_to">Payment Done</string>
+    <string name="money_transfer_success_to">Money Transfer Successfully</string>
+    <string name="avalable_train_to">Available Train : </string>
+    <string name="avalable_bus_to">Available Bus : </string>
+    <string name="ruppes_hint">₹0</string>
+    <string name="rating_hint"><![CDATA[0 ratings & 0 reviews]]></string>
+
+    <!--wallet-->
+    <string name="date">Date : </string>
+
+    <!--Edit Profile-->
+    <string name="personal_info">Personal Information</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">Date Of Birth*</string>
+    <string name="gender">Gender*</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="edu_qualification">Edu. Qualification</string>
+    <string name="gst_number">GST Number</string>
+    <string name="nominee_name">Nominee Name</string>
+    <string name="nominee_relation">Nominee Relation</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="account_number">Account Number</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="insurance_info">Insurance Information</string>
+    <string name="life_insurance">Life Insurance</string>
+    <string name="insurance_number">Insurance Number</string>
+    <string name="policy_holder_name">Policy Holder Name</string>
+    <string name="premium">Premium</string>
+    <string name="company_name">Company Name</string>
+    <string name="general_insurance">General Insurance</string>
+    <string name="insurance_type">Insurance Type</string>
+    <string name="two_wheeler">Two Wheeler</string>
+    <string name="four_wheeler">Four Wheeler</string>
+    <string name="policy_number">Policy Number</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="purchased_year">Purchased Year</string>
+    <string name="expiry_date">Expiry Date</string>
+
+    <!--Movie Ticket-->
+    <string name="out_of_stock">Out of stock!</string>
+    <string name="in_stock">In Stock</string>
+
+    <!--EditProfile_Error-->
+
+    <!--shipping and checkout-->
+    <string name="order_placed">Order Placed</string>
+    <string name="error">Error!!</string>
+    <string name="something_went_wrong">Something went Wrong .....</string>
+    <string name="please_try_after_sometime">Please try after sometime.</string>
+    <string name="hint_fullname"> Name can\'t be empty</string>
+    <string name="hint_address">Please enter address.</string>
+    <string name="hint_state">Please enter state.</string>
+    <string name="hint_city">City can\'t be empty</string>
+    <string name="hint_pincode">Pincode can\'t be empty</string>
+    <string name="office">Office</string>
+    <string name="full_name">Full Name</string>
+    <string name="street_no_address">Street no / address</string>
+    <string name="landmark">Landmark</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="tehsil">Tehsil</string>
+    <string name="address_type">Address Type</string>
+    <string name="check_if_add_perm">Check if Address is Permanent.</string>
+    <string name="add_and_deliver">Add &amp; Deliver here</string>
+    <string name="deliver_here">Deliver Here</string>
+    <string name="wallet_amt">Bag Amount : </string>
+    <string name="total_price_for">Total Price for </string>
+    <string name="items_rs">items : ₹</string>
+    <string name="same_as_billing_address">Same as Billing Address</string>
+
+
+    <!--My Orders-->
+    <string name="item_not_found">Item not Found!</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="qty">Qty </string>
+    <string name="order_status">STATUS : </string>
+    <string name="order_id">ORDER ID : </string>
+    <string name="price">Price : ₹ </string>
+    <string name="shipping">Shipping : ₹</string>
+    <string name="total">Total : ₹</string>
+
+    <!--MLM Sidemenu-->
+    <string name="free_registration">Free Registration</string>
+    <string name="profile">Profile</string>
+    <string name="my_wallet">My Bag</string>
+    <string name="my_team">My Team</string>
+    <string name="my_income">My Income</string>
+    <string name="change_pswd">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="ewallet_request">Bag Request</string>
+    <string name="payout_report">Payout Report</string>
+    <string name="matching_bonus">Matching Bonus</string>
+
+    <string name="cart">Cart</string>
+
+    <!--Support MLM-->
+    <string name="details_address"><u>Address Details</u></string>
+    <string name="personal_details"><u>Personal Details</u></string>
+
+
+    <!--insurance Details-->
+
+    <!--Recharge Status-->
+    <string name="failed">Failed</string>
+    <string name="completed">Completed</string>
+    <string name="recharge_failed"> Recharge Payment Failed.</string>
+    <string name="recharge_successfull"> Recharge Payment Successfully.</string>
+    <string name="goto_dashboard">GO To Dashboard</string>
+    <string name="recharge_again">Recharge Again</string>
+    <string name="check_availability"><u>Check Availability</u></string>
+    <string name="orders">Orders</string>
+    <string name="amount">Amount</string>
+    <string name="copy_code">Copy Referral Code : <b>DHA100191</b></string>
+
+    <string name="path_circle">
+    M 50,50
+    m -48,0
+    a 48,48 0 1,0 96,0
+    a 48,48 0 1,0 -96,0
+  </string>
+
+
+    <string name="select_region">Select Region</string>
+
+    <!--PAYTM-->
+
+    <!--<string name="order_id">Order Id : </string>-->
+    <!--<string name="customer_id">Customer Id : </string>-->
+    <string name="go_on_root"><u>Go on Top</u></string>
+    <string name="up"><u>BACK</u></string>
+    <string name="iishopping">IIAShopping</string>
+    <string name="others">Others</string>
+    <string name="cancel"><u>Cancel Request</u></string>
+    <string name="flip">View CVV</string>
+
+</resources>

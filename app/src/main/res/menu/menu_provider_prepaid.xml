@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="100"
+        android:title="Vodafone"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="Airtel"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="Idea"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="Jio"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="TataIndicom"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="TATADocomoFlexi"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="TATADocomoSpecial"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="BSNLTopUp"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="BSNLValiditySpecial"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="MTNLTopUp"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:title="MTNLValiditySpecial"
+        app:showAsAction="never" />
+</menu>

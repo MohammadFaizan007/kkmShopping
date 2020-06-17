@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="item_offset">0.3dp</dimen>
+
+    <color name="semi_white">#88FFFFFF</color>
+
+</resources>

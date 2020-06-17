@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "186410046983",
+    "firebase_url": "https://cashbag-e89fb.firebaseio.com",
+    "project_id": "cashbag-e89fb",
+    "storage_bucket": "cashbag-e89fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186410046983:android:4f097aa2f30f4805",
+        "android_client_info": {
+          "package_name": "com.digitalcashbag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186410046983-j62b2pi9k6pieau08834sraat166e1qb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD9LV2i34jCyI2_ygHBVPaYW7Ec909Rso"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

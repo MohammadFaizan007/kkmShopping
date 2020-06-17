@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:enabled="false"
+        android:title="Choose Device" />
+    <item
+        android:id="@+id/device1"
+        android:title="SECUGEN" />
+    <item
+        android:id="@+id/device2"
+        android:title="MANTRA" />
+    <item
+        android:id="@+id/device3"
+        android:title="MORPHO" />
+    <item
+        android:id="@+id/device4"
+        android:title="STARTEK" />
+</menu>

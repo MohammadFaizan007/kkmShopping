@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="MissingPrefix"
+    tools:targetApi="11">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/text_color_light"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_light">
+
+                    <EditText
+                        android:id="@+id/account_holder_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/text_color"
+                        android:clickable="true"
+                        android:hint="Account Holder Name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/text_color_light"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_light">
+
+                    <EditText
+                        android:id="@+id/account_no_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/text_color"
+                        android:clickable="true"
+                        android:digits="0123456789"
+                        android:hint="Account No."
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="18"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/text_color_light"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_light">
+
+                    <EditText
+                        android:id="@+id/ifsc_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/text_color"
+                        android:clickable="true"
+                        android:hint="IFSC"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="11"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/text_color_light"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_light">
+
+                    <EditText
+                        android:id="@+id/et_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/text_color"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Bank"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/text_color_light"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_light">
+
+                    <EditText
+                        android:id="@+id/branch_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/text_color"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Branch"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_pan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:backgroundTint="@color/text_color_light"-->
+                <!--android:padding="2dp"-->
+                <!--android:textColorHint="@color/text_color_light"-->
+                <!--android:visibility="gone">-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/pan_et"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:backgroundTint="@color/text_color"-->
+                <!--android:clickable="true"-->
+                <!--android:hint="Pan"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:inputType="textCapCharacters"-->
+                <!--android:maxLength="10"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="14sp" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_aadhar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:backgroundTint="@color/text_color_light"-->
+                <!--android:padding="2dp"-->
+                <!--android:textColorHint="@color/text_color_light"-->
+                <!--android:visibility="gone">-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/aadhar_et"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:backgroundTint="@color/text_color"-->
+                <!--android:clickable="true"-->
+                <!--android:digits="0123456789"-->
+                <!--android:hint="Aadhar"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:inputType="number"-->
+                <!--android:maxLength="12"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="14sp" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_upi"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:backgroundTint="@color/text_color_light"-->
+                <!--android:padding="2dp"-->
+                <!--android:textColorHint="@color/text_color_light"-->
+                <!--android:visibility="gone">-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/upi_et"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:backgroundTint="@color/text_color"-->
+                <!--android:clickable="true"-->
+                <!--android:hint="UPI ID"-->
+                <!--android:imeOptions="actionDone"-->
+                <!--android:inputType="text"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="14sp" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/primary_header"
+                    android:gravity="center"
+                    android:text="Photocopy of Cheque"
+                    android:textColor="@color/white" />
+
+
+                <com.lid.lib.LabelImageView
+                    android:id="@+id/imgAddressFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/border"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/camera_upload"
+                    app:label_backgroundColor="@color/colorPrimaryDark"
+                    app:label_height="30dp"
+                    app:label_orientation="LEFT_TOP"
+                    app:label_textSize="12sp" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rect_btn_bg_darkgreen"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 4
+        versionName "1.3"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+
+//            buildConfigField "String", "SPO_ID", "\"ADCA101172\""//demo
+            buildConfigField "String", "SPO_ID", "\"ADCA111762\""//live
+            buildConfigField "String", "M2P_YAPCODE", "\"1234\""
+            buildConfigField "String", "M2P_TRANSFERSELF", "\"M2C\""
+            buildConfigField "String", "M2P_TRANSFEROTHER", "\"M2M\""
+//            buildConfigField "String", "M2P_BUSINESSTYPE", "\"CASHBAG\""//demo
+            buildConfigField "String", "M2P_BUSINESSTYPE", "\"FBCASHBAG\""//live
+            buildConfigField "String", "SMS_RETRIEVER", "\"zlLtE2Y8h5j\""
+            buildConfigField "String", "M2P_USERNAME", "\"9555123100\""
+            buildConfigField "String", "M2P_PASSWORD", "\"India@123E2Y8h\""
+            // buildConfigField "String", "AEPS_MID_SECRET_KEY", "\"f196b2bfc4264daca360d7525e457a8b\"" TEST
+            // buildConfigField "String", "AEPS_MID", "\"4f0551dedfce4e58\"" TEST
+            // buildConfigField "String", "AEPS_AGENT_CODE", "\"699d475551\"" TEST
+            buildConfigField "String", "AEPS_MID_SECRET_KEY", "\"33d291413c3849e6ae53aab7366c5e3d\""
+            buildConfigField "String", "AEPS_MID", "\"848beb8adcab4675\""
+            buildConfigField "String", "AEPS_AGENT_CODE", "\"ae303e6cd1\""
+            buildConfigField "String", "BUNDLE", "\"cashbag_kkm\""
+            buildConfigField "String", "DYNAMIC_LINK", "\"digitalcashbag\"" //LIVE
+//            buildConfigField "String", "DYNAMIC_LINK", "\"kkmdigitalpkg\"" //DEMO
+            buildConfigField "String", "Support_email", "\"donotreply@cashbag.co.in\""
+            buildConfigField "String", "Support_password", "\"India@123\""
+            buildConfigField "String", "Support_general", "\"generalcashbag@gmail.com\""
+            buildConfigField "String", "Support_profile", "\"profilecashbag@gmail.com\""
+            buildConfigField "String", "Support_referral", "\"referralcashbag@gmail.com\""
+            buildConfigField "String", "Support_shopping", "\"shoppingcashbag@gmail.com\""
+            buildConfigField "String", "Support_bagrecharge", "\"bagrechargecashbag@gmail.com\""
+            buildConfigField "String", "Support_billpayment", "\"billpaymentcashbag@gmail.com\""
+            buildConfigField "String", "BASE_URL_M2P", "\"https://cashbag.co.in/api/M2PAPI/\""
+            buildConfigField "String", "BASE_URL_M2PV2", "\"https://cashbag.co.in/api/M2PAPIV2/\""
+            buildConfigField "String", "BASE_URL", "\"http://iiashopping.com/api/WebApi/\""
+//            buildConfigField "String", "BASE_URL_UTILITY", "\"https://kkmdigital.com/api/CyberPlatWebApi/\""
+            buildConfigField "String", "BASE_URL_UTILITY", "\"https://cashbag.co.in/api/CyberPlatWebApi/\""
+            buildConfigField "String", "BASE_URL_UTILITY_V2", "\"https://cashbag.co.in/api/CyberPlateWebAPIV2/\""
+            buildConfigField "String", "BASE_URL_MLM", "\"https://cashbag.co.in/api/WebApi/\""
+
+            // V2
+            buildConfigField "String", "BASE_URL_MLM_V2", "\"https://cashbag.co.in/api/WebApiV2/\""
+
+            buildConfigField "String", "BASE_URL_FILE", "\"https://cashbag.co.in/api/ImageUploadAPI/\""
+            buildConfigField "String", "PINCODEURL", "\"https://cashbag.co.in/api/WebApi/GetStateCityTalukByPincode?Pincode=\""
+            buildConfigField "String", "SMS_URL", "\"http://www.unicel.in/SendSMS/sendmsg.php?uname=Kkmdigital&pass=qtpl2015&send=CASBAG&dest=91\""
+            buildConfigField "String", "AFFILIATE_URL", "\"https://inr.deals/track?id=n64882400&src=backend&url=\""
+            buildConfigField "String", "PAYPAL_PAYMENT_URL", "\"https://cashbag.co.in/Home/Payment?name=\""
+            buildConfigField "String", "BASE_URL_INR", "\"https://cashbag.co.in/api/INRDealsAPI/\""
+            buildConfigField "String", "SUCCESS_URL", "\"https://cashbag.co.in/Home/SuccessView\""
+            buildConfigField "String", "FAIL_URL", "\"https://cashbag.co.in/Home/FailureView\""
+            buildConfigField "String", "AFFILIATE_URL_CAMPAIGN", "\"https://inr.deals/track?id=n64882400&src=merchant-detail-backend&campaign=cps&url=\""
+            buildConfigField "String", "BASE_URL_ICONS", "\"https://cashbag.co.in/AndroidIcon/\""
+            buildConfigField "String", "EASYPAY_KEY", "\"2205712036005500\""
+            buildConfigField "String", "EASYPAY_URL1", "\"https://eazypay.icicibank.com/EazyPG?merchantid=223601&mandatory fields=\""
+            buildConfigField "String", "EASYPAY_URL2", "\"&optional fields=raLPgpz3r3pdOqbsdPqWNA==&returnurl=omNs/eU2V3ONUc8C93m1NLC8tThNVhzpMMry37eri2A=&Reference No=\""
+//          buildConfigField "String", "SALES_POINT", "\"https://qa.salespointonline.com/btob-products?term=\"" //DEMO
+            buildConfigField "String", "SALES_POINT", "\"https://www.salespointonline.com/btob-products?term=\""
+//LIVE
+            buildConfigField "String", "CASHBAG_KEY", "\"India@123E2Y8h12\""
+        }
+        release {
+
+//            buildConfigField "String", "SPO_ID", "\"ADCA101172\""//demo
+            buildConfigField "String", "SPO_ID", "\"ADCA111762\""//live
+            buildConfigField "String", "M2P_YAPCODE", "\"1234\""
+//            buildConfigField "String", "M2P_BUSINESSTYPE", "\"CASHBAG\""//demo
+            buildConfigField "String", "M2P_BUSINESSTYPE", "\"FBCASHBAG\""//live
+            buildConfigField "String", "M2P_TRANSFERSELF", "\"M2C\""
+            buildConfigField "String", "M2P_TRANSFEROTHER", "\"M2M\""
+            buildConfigField "String", "SMS_RETRIEVER", "\"zlLtE2Y8h5j\""
+            buildConfigField "String", "M2P_USERNAME", "\"9555123100\""
+            buildConfigField "String", "M2P_PASSWORD", "\"India@123E2Y8h\""
+            // buildConfigField "String", "AEPS_MID_SECRET_KEY", "\"f196b2bfc4264daca360d7525e457a8b\"" TEST
+            // buildConfigField "String", "AEPS_MID", "\"4f0551dedfce4e58\"" TEST
+            // buildConfigField "String", "AEPS_AGENT_CODE", "\"699d475551\"" TEST
+            buildConfigField "String", "AEPS_MID_SECRET_KEY", "\"33d291413c3849e6ae53aab7366c5e3d\""
+            buildConfigField "String", "AEPS_MID", "\"848beb8adcab4675\""
+            buildConfigField "String", "AEPS_AGENT_CODE", "\"ae303e6cd1\""
+            buildConfigField "String", "BUNDLE", "\"cashbag_kkm\""
+            buildConfigField "String", "DYNAMIC_LINK", "\"digitalcashbag\"" //LIVE
+            //buildConfigField "String", "DYNAMIC_LINK", "\"kkmdigitalpkg\"" //DEMO
+            buildConfigField "String", "Support_email", "\"donotreply@cashbag.co.in\""
+            buildConfigField "String", "Support_password", "\"India@123\""
+            buildConfigField "String", "Support_general", "\"generalcashbag@gmail.com\""
+            buildConfigField "String", "Support_profile", "\"profilecashbag@gmail.com\""
+            buildConfigField "String", "Support_referral", "\"referralcashbag@gmail.com\""
+            buildConfigField "String", "Support_shopping", "\"shoppingcashbag@gmail.com\""
+            buildConfigField "String", "Support_bagrecharge", "\"bagrechargecashbag@gmail.com\""
+            buildConfigField "String", "Support_billpayment", "\"billpaymentcashbag@gmail.com\""
+            buildConfigField "String", "BASE_URL_M2P", "\"https://cashbag.co.in/api/M2PAPI/\""
+            buildConfigField "String", "BASE_URL_M2PV2", "\"https://cashbag.co.in/api/M2PAPIV2/\""
+            buildConfigField "String", "BASE_URL", "\"http://iiashopping.com/api/WebApi/\""
+            buildConfigField "String", "BASE_URL_INR", "\"https://cashbag.co.in/api/INRDealsAPI/\""
+            buildConfigField "String", "BASE_URL_UTILITY", "\"https://cashbag.co.in/api/CyberPlatWebApi/\""
+            buildConfigField "String", "BASE_URL_UTILITY_V2", "\"https://cashbag.co.in/api/CyberPlateWebAPIV2/\""
+            buildConfigField "String", "BASE_URL_MLM", "\"https://cashbag.co.in/api/WebApi/\""// V2
+            buildConfigField "String", "BASE_URL_MLM_V2", "\"https://cashbag.co.in/api/WebApiV2/\""
+            buildConfigField "String", "BASE_URL_FILE", "\"https://cashbag.co.in/api/ImageUploadAPI/\""
+            buildConfigField "String", "PINCODEURL", "\"https://cashbag.co.in/api/WebApi/GetStateCityTalukByPincode?Pincode=\""
+            buildConfigField "String", "SMS_URL", "\"http://www.unicel.in/SendSMS/sendmsg.php?uname=Kkmdigital&pass=qtpl2015&send=CASBAG&dest=91\""
+            buildConfigField "String", "AFFILIATE_URL", "\"https://inr.deals/track?id=n64882400&src=backend&url=\""
+            buildConfigField "String", "PAYPAL_PAYMENT_URL", "\"https://cashbag.co.in/Home/Payment?name=\""
+            buildConfigField "String", "SUCCESS_URL", "\"https://cashbag.co.in/Home/SuccessView\""
+            buildConfigField "String", "FAIL_URL", "\"https://cashbag.co.in/Home/FailureView\""
+            buildConfigField "String", "AFFILIATE_URL_CAMPAIGN", "\"https://inr.deals/track?id=n64882400&src=merchant-detail-backend&campaign=cps&url=\""
+            buildConfigField "String", "BASE_URL_ICONS", "\"https://cashbag.co.in/AndroidIcon/\""
+            buildConfigField "String", "EASYPAY_KEY", "\"2205712036005500\""
+            buildConfigField "String", "EASYPAY_URL1", "\"https://eazypay.icicibank.com/EazyPG?merchantid=223601&mandatory fields=\""
+            buildConfigField "String", "EASYPAY_URL2", "\"&optional fields=raLPgpz3r3pdOqbsdPqWNA==&returnurl=omNs/eU2V3ONUc8C93m1NLC8tThNVhzpMMry37eri2A=&Reference No=\""
+//          buildConfigField "String", "SALES_POINT", "\"https://qa.salespointonline.com/btob-products?term=\"" //DEMO
+            buildConfigField "String", "SALES_POINT", "\"https://www.salespointonline.com/btob-products?term=\""
+//LIVE
+            buildConfigField "String", "CASHBAG_KEY", "\"India@123E2Y8h12\""
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//for using lambdas on Android
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api deps.support.appCompat
+    api deps.support.constraint
+    api deps.support.recyclerView
+
+    api deps.support.cardView
+    api deps.support.support
+    api deps.support.designSupport
+    //Custom Font ----------------------------------------------------------
+    api deps.others.calligraphy
+    api deps.others.butterknife
+    api deps.others.alerter
+    api deps.others.kotlinstdlib
+
+    // Retrofit ------------------------------------------------------------
+    api deps.networks.retrofit
+    api deps.networks.gson
+    api deps.networks.converter
+
+    //RxJava
+    api deps.rxJava.jakewharton
+
+    //DatePicker
+    api deps.calender.datepicker
+
+    //RoundedImage
+    api deps.imageview.roundedimageview
+
+    //Indicator
+//    api deps.indicator.indicator
+
+    //  Glide ---------------------------------------------------------------
+    api deps.networks.glide
+//    api deps.networks.compiler
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.android.support:exifinterface:28.0.0'
+
+}

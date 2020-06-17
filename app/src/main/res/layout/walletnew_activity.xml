@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_background"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/total_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/image_bg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Total ₹ 00.00"
+                android:textAppearance="@style/TextField_Bold"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/bagamount_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/total_txt">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circle_shadow"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_bag_wallet" />
+
+                    <TextView
+                        android:id="@+id/textView95"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Bag Amount"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/add_wallet"
+                        app:layout_constraintStart_toEndOf="@+id/imageView17"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/bag_bal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="₹ 0"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/textView95"
+                        app:layout_constraintStart_toStartOf="@+id/textView95"
+                        app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+                    <TextView
+                        android:id="@+id/textView97"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Available in Cashbag Wallet"
+                        android:textAppearance="@style/TextField_Regular"
+                        android:textColor="@color/text_color_extra_light"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/bag_bal"
+                        app:layout_constraintStart_toStartOf="@+id/bag_bal"
+                        app:layout_constraintTop_toBottomOf="@+id/bag_bal" />
+
+                    <TextView
+                        android:id="@+id/view_bag_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="View Details"
+                        android:textAppearance="@style/TextField_Regular"
+                        android:textColor="@color/blue_light"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView97"
+                        app:layout_constraintStart_toStartOf="@+id/textView97"
+                        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+
+                    <ImageView
+                        android:id="@+id/add_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_right_arrow" />
+
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardbalance_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bagamount_card">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circle_shadow"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_cashbag_card" />
+
+                    <TextView
+                        android:id="@+id/card_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Card Balance"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/card_view"
+                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/card_amt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 0"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/card_tv"
+                        app:layout_constraintStart_toStartOf="@+id/card_tv"
+                        app:layout_constraintTop_toBottomOf="@+id/card_tv" />
+
+
+                    <TextView
+                        android:id="@+id/view_card_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="View Details"
+                        android:textAppearance="@style/TextField_Regular"
+                        android:textColor="@color/blue_light"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card_amt"
+                        app:layout_constraintStart_toStartOf="@+id/card_amt"
+                        app:layout_constraintTop_toBottomOf="@+id/card_amt" />
+
+                    <ImageView
+                        android:id="@+id/card_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_right_arrow" />
+
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/requestBankKit_lo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:drawablePadding="16dp"
+                android:visibility="gone"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardbalance_card">
+
+                <TextView
+                    android:id="@+id/requestBankKit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/commission_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestBankKit_lo">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circle_shadow"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_commission_wallet" />
+
+                    <TextView
+                        android:id="@+id/comm_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Commission"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/transfer_commission"
+                        app:layout_constraintStart_toEndOf="@+id/imageView18"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/comm_amt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="₹ 0"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/comm_tv"
+                        app:layout_constraintStart_toStartOf="@+id/comm_tv"
+                        app:layout_constraintTop_toBottomOf="@+id/comm_tv" />
+
+
+                    <TextView
+                        android:id="@+id/view_commission_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="View Details"
+                        android:textAppearance="@style/TextField_Regular"
+                        android:textColor="@color/blue_light"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/comm_amt"
+                        app:layout_constraintStart_toStartOf="@+id/comm_amt"
+                        app:layout_constraintTop_toBottomOf="@+id/comm_amt" />
+
+
+                    <ImageView
+                        android:id="@+id/transfer_commission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_right_arrow" />
+
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hold_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/commission_card">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circle_shadow"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_hold_wallet" />
+
+                    <TextView
+                        android:id="@+id/hold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Hold"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/hold_view"
+                        app:layout_constraintStart_toEndOf="@+id/imageView19"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/hold_amt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="₹ 0"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/hold"
+                        app:layout_constraintStart_toStartOf="@+id/hold"
+                        app:layout_constraintTop_toBottomOf="@+id/hold" />
+
+                    <TextView
+                        android:id="@+id/hold_reason"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="your transaction is hold due to merchant account issue"
+                        android:textAppearance="@style/TextField_Regular"
+                        android:textColor="@color/text_color_extra_light"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/hold_amt"
+                        app:layout_constraintStart_toStartOf="@+id/hold_amt"
+                        app:layout_constraintTop_toBottomOf="@+id/hold_amt" />
+
+                    <TextView
+                        android:id="@+id/view_hold_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="View Details"
+                        android:textAppearance="@style/TextField_Regular"
+                        android:textColor="@color/blue_light"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/hold_amt"
+                        app:layout_constraintStart_toStartOf="@+id/hold_reason"
+                        app:layout_constraintTop_toBottomOf="@+id/hold_reason" />
+
+                    <ImageView
+                        android:id="@+id/hold_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_right_arrow" />
+
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/unclear_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hold_card">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circle_shadow"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_uncleared_wallet" />
+
+                    <TextView
+                        android:id="@+id/uc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Unclear"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/unclear_view"
+                        app:layout_constraintStart_toEndOf="@+id/imageView20"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/unclear_amt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="₹ 0"
+                        android:textAppearance="@style/TextField_Bold"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/uc"
+                        app:layout_constraintStart_toStartOf="@+id/uc"
+                        app:layout_constraintTop_toBottomOf="@+id/uc" />
+
+
+                    <TextView
+                        android:id="@+id/view_unclear_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="View Details"
+                        android:textAppearance="@style/TextField_Regular"
+                        android:textColor="@color/blue_light"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/unclear_amt"
+                        app:layout_constraintStart_toStartOf="@+id/unclear_amt"
+                        app:layout_constraintTop_toBottomOf="@+id/unclear_amt" />
+
+                    <ImageView
+                        android:id="@+id/unclear_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_right_arrow" />
+
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/notice_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/yellow_box"
+                android:drawableLeft="@drawable/ic_info"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="Attention!!"
+                android:textAppearance="@style/TextField_Regular"
+                android:textColor="@color/text_color_light"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/unclear_card" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

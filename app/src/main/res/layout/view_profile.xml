@@ -1,0 +1,1106 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/edit_profile_btn"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cntraint_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/user_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher_foreground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_border_color="#9AB5B5"
+                app:riv_border_width="1dip"
+                app:riv_corner_radius="30dip"
+                app:riv_mutate_background="true"
+                app:riv_oval="true" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/personal_info_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_image"
+                tools:ignore="MissingConstraints">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+
+                    <TextView
+                        android:id="@+id/additional_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/personal_info"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.9"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/personal_info_img"
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/minus_ic"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@+id/personal_info_lo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintStart_toEndOf="@+id/additional_detail"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/personal_info_lo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/additional_detail">
+
+                        <TextView
+                            android:id="@+id/tv_first_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/first_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/first_name"
+                            app:layout_constraintHorizontal_bias="0.30"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/first_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_first_name"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/tv_last_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/last_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/last_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_first_name" />
+
+                        <TextView
+                            android:id="@+id/last_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_last_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_first_name" />
+
+
+                        <TextView
+                            android:id="@+id/tv_dob"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/dob"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/dob"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_last_name" />
+
+
+                        <TextView
+                            android:id="@+id/dob"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_dob"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_last_name" />
+
+
+                        <TextView
+                            android:id="@+id/gender_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/gender"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/gender"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_dob" />
+
+
+                        <TextView
+                            android:id="@+id/gender"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/gender_txt"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_dob" />
+
+
+                        <TextView
+                            android:id="@+id/married_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/marital_status"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/married_atatus"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/gender_txt" />
+
+
+                        <TextView
+                            android:id="@+id/married_atatus"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/married_txt"
+                            app:layout_constraintTop_toBottomOf="@+id/gender_txt" />
+
+
+                        <TextView
+                            android:id="@+id/tv_qualification"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/edu_qualification"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toStartOf="@+id/edu_qualification"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/married_txt" />
+
+                        <TextView
+                            android:id="@+id/edu_qualification"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_qualification"
+                            app:layout_constraintTop_toBottomOf="@+id/married_txt" />
+
+
+                        <TextView
+                            android:id="@+id/tv_gst_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/gst_number"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toStartOf="@+id/gst_number"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_qualification" />
+
+                        <TextView
+                            android:id="@+id/gst_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_gst_number"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_qualification" />
+
+
+                        <TextView
+                            android:id="@+id/tv_father_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/email_id"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/father_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_gst_number" />
+
+                        <TextView
+                            android:id="@+id/father_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:ellipsize="marquee"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_father_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_gst_number" />
+
+
+                        <TextView
+                            android:id="@+id/tv_nominee_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/nominee_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/nominee_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_father_name" />
+
+                        <TextView
+                            android:id="@+id/nominee_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:ellipsize="marquee"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_nominee_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_father_name" />
+
+                        <TextView
+                            android:id="@+id/tv_nominee_relation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/nominee_relation"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/nominee_relation"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_nominee_name" />
+
+                        <TextView
+                            android:id="@+id/nominee_relation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_nominee_relation"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_nominee_name" />
+
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/bank_details_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/personal_info_card"
+                tools:ignore="MissingConstraints">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/bank_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/bank_details"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/bank_detail_img"
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/pluse_ic"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@+id/bank_details_lo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/bank_details_lo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/bank_detail">
+
+                        <TextView
+                            android:id="@+id/tv_acco_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/account_number"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/acco_number"
+                            app:layout_constraintHorizontal_bias="0.30"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/acco_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.70"
+                            app:layout_constraintStart_toEndOf="@+id/tv_acco_number"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/tv_bank_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/bank_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/bank_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_acco_number" />
+
+                        <TextView
+                            android:id="@+id/bank_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_bank_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_acco_number" />
+
+
+                        <TextView
+                            android:id="@+id/tv_ifsc_code"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/ifsc_code"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/ifsc_code"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_bank_name" />
+
+                        <TextView
+                            android:id="@+id/ifsc_code"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_ifsc_code"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_bank_name" />
+
+                        <TextView
+                            android:id="@+id/tv_branch_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/branch_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/branch_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_ifsc_code" />
+
+                        <TextView
+                            android:id="@+id/branch_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_branch_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_ifsc_code" />
+
+
+                    </android.support.constraint.ConstraintLayout>
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bank_details_card"
+                tools:ignore="MissingConstraints">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+
+                    <TextView
+                        android:id="@+id/insurance_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/insurance_info"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/insurance_img"
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/pluse_ic"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@+id/insurance_detail_lo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/insurance_detail_lo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/insurance_details">
+
+                        <TextView
+                            android:id="@+id/life_insurance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/life_insurance"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/tv_insurance_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/insurance_number"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/insurance_number"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/life_insurance" />
+
+                        <TextView
+                            android:id="@+id/insurance_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_insurance_number"
+                            app:layout_constraintTop_toBottomOf="@+id/life_insurance" />
+
+
+                        <TextView
+                            android:id="@+id/tv_policy_holder_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/policy_holder_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/policy_holder_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_insurance_number" />
+
+                        <TextView
+                            android:id="@+id/policy_holder_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_policy_holder_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_insurance_number" />
+
+
+                        <TextView
+                            android:id="@+id/tv_premium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/premium"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/premium"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_policy_holder_name" />
+
+                        <TextView
+                            android:id="@+id/premium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_premium"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_policy_holder_name" />
+
+
+                        <TextView
+                            android:id="@+id/tv_company_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/company_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/company_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_premium" />
+
+                        <TextView
+                            android:id="@+id/company_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_company_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_premium" />
+
+                        <TextView
+                            android:id="@+id/tv_insur_nominee_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/nominee_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/insur_nominee_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_company_name" />
+
+                        <TextView
+                            android:id="@+id/insur_nominee_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_insur_nominee_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_company_name" />
+
+
+                        <TextView
+                            android:id="@+id/general_insurance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/general_insurance"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_insur_nominee_name" />
+
+
+                        <TextView
+                            android:id="@+id/tv_insu_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/insurance_type"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/insu_type"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/general_insurance" />
+
+                        <TextView
+                            android:id="@+id/insu_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_insu_type"
+                            app:layout_constraintTop_toBottomOf="@+id/general_insurance" />
+
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/insu_type_txt"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="10dp"-->
+                        <!--android:text="@string/insurance_type"-->
+                        <!--android:textColor="@color/text_color_light"-->
+                        <!--android:textSize="12sp"-->
+                        <!--app:layout_constraintStart_toStartOf="parent"-->
+                        <!--app:layout_constraintTop_toBottomOf="@+id/general_insurance" />-->
+
+
+                        <!--<RadioGroup-->
+                        <!--android:id="@+id/rg_insu_type"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="5dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="1"-->
+                        <!--app:layout_constraintStart_toStartOf="parent"-->
+                        <!--app:layout_constraintTop_toBottomOf="@+id/insu_type_txt">-->
+
+                        <!--<RadioButton-->
+                        <!--android:id="@+id/two_wheeler_rb"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:checked="true"-->
+                        <!--android:text="@string/two_wheeler"-->
+                        <!--android:textColor="@color/text_color"-->
+                        <!--android:textSize="13sp"-->
+                        <!--android:theme="@style/RadioButtonStyle" />-->
+
+                        <!--<RadioButton-->
+                        <!--android:id="@+id/four_wheeler_rb"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:text="@string/four_wheeler"-->
+                        <!--android:textColor="@color/text_color"-->
+                        <!--android:textSize="13sp"-->
+                        <!--android:theme="@style/RadioButtonStyle" />-->
+
+                        <!--</RadioGroup>-->
+
+
+                        <TextView
+                            android:id="@+id/tv_policy_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/policy_number"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/policy_number"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintHorizontal_chainStyle="spread_inside"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_insu_type" />
+
+                        <TextView
+                            android:id="@+id/policy_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_policy_number"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_insu_type" />
+
+
+                        <TextView
+                            android:id="@+id/tv_vehicle_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/vehicle_number"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/vehicle_number"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_policy_number" />
+
+                        <TextView
+                            android:id="@+id/vehicle_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_vehicle_number"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_policy_number" />
+
+
+                        <TextView
+                            android:id="@+id/tv_purchased_year"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/purchased_year"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/purchased_year"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_vehicle_number" />
+
+                        <TextView
+                            android:id="@+id/purchased_year"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_purchased_year"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_vehicle_number" />
+
+
+                        <TextView
+                            android:id="@+id/tv_gen_insur_premium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/premium"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/gen_insur_premium"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_purchased_year" />
+
+                        <TextView
+                            android:id="@+id/gen_insur_premium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_gen_insur_premium"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_purchased_year" />
+
+                        <TextView
+                            android:id="@+id/tv_expiry_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/expiry_date"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/expiry_date"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_gen_insur_premium" />
+
+                        <TextView
+                            android:id="@+id/expiry_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_expiry_date"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_gen_insur_premium" />
+
+
+                        <TextView
+                            android:id="@+id/tv_gen_insu_company_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:drawableEnd="@drawable/two_dots"
+                            android:padding="5dp"
+                            android:text="@string/company_name"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toStartOf="@+id/gen_insu_company_name"
+                            app:layout_constraintHorizontal_bias="0.3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_expiry_date" />
+
+                        <TextView
+                            android:id="@+id/gen_insu_company_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.7"
+                            app:layout_constraintStart_toEndOf="@+id/tv_gen_insu_company_name"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_expiry_date" />
+
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/edit_profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/btn_bg_color"
+        android:gravity="center"
+        android:text="@string/my_profile_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
